@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary_white: #ffffff;
+  --secondary_white: #f3f4f5;
+  --text_color: #222222;
+  --attention_color: #c60f2d;
+  --headingHover_color: #003666;
+  --heading_txt: 2rem;
+  --sub_heading_txt: 1.5rem;
+  --normal_txt: 1rem;
+  --small_txt: 0.875rem;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* section{
+    background-color: #003666;
+} */
+.newcontain{
+    width: 935px;
+    height: 500px;
+    background-color: white;
+    overflow-y:auto;
+    /* text-align: center; */
+}
+.heading{
+    width: 935px;
+    height: 30px;
+    /* margin-left: 90px; */
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 25px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    color:var(--headingHover_color);
+}
+.inputs{
+    width: 771px;
+    /* text-align: center; */
+    margin-left: 90px;
+    margin-top: 3%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    letter-spacing: 0.02em;
+}
+select {
+    width: 250px;
+    height: 47px;
+    padding-left: 15px;
+    border-radius: 4px;
+    border: 0.5px solid black;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+option {
+    border: 1px;
+    border-color: black;
+    margin-top: 10px;
+}
+.row input{
+    width: 250px;
+    height: 47px;
+    /* text-align: center; */
+    padding-left: 15px;
+    border-radius: 4px;
+    border: 0.5px solid black;
+    margin-top: 10px;
+}
+.newdrop button{
+    width: 765px;
+    height: 47px;
+    /* padding-left: 15px; */
+    border-radius: 4px;
+    border: 0.5px solid black;
+    margin-top: 10px;
+    margin-right: 10%;
+}
+.inp input{
+    width: 765px;
+    height: 47px;
+    padding-left: 15px;
+    border-radius: 4px;
+    border: 0.5px solid black;
+    margin-top: 10px;
+}
+.newcontain .submit_btn{
+    margin-left: 25%;
+    padding: 12.6851px 19.5156px 12.6851px 23.4187px;
+    gap: 5.85px;
+    width: 365.92px;
+    height: 47.37px;
+    background: var(--headingHover_color);
+    border-radius: 3.90311px;
+    color: white;
+}
+.newcontain .submit_btn:hover{
+    border: 2px solid var(--headingHover_color);
+    background: white;
+    color: var(--headingHover_color);
+}
+.dropdown-menu>li{
+    width: 765px;
+}
+.bbt{
+    padding: 12.6851px 19.5156px 12.6851px 23.4187px;
+    gap: 5.85px;
+    width: 250px;
+    height: 47.37px;
+    background: var(--headingHover_color);
+    border-radius: 3.90311px;
+    color: white;
+}

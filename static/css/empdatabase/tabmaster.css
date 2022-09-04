@@ -1,0 +1,51 @@
+.newbtn{
+    padding: 12.6851px 19.5156px 12.6851px 23.4187px;
+    gap: 5.85px;
+    width: 365.92px;
+    height: 47.37px;
+    background: var(--headingHover_color);
+    border-radius: 3.90311px;
+    color: white;
+    margin-top: 2.5%;
+}
+.table{
+    width: 100%;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+}
+.del{
+  color: #c60f2d;
+}
+.edit{
+  color: #003666;
+}
+
+tbody a{
+  color: white !important;
+}
+
+th {
+padding:12px;
+background-color: #C60F2D;
+color: white;
+}
+tr:hover {background-color: #ddd;}
+
+
+@media screen and (max-width:700px) {
+  table{
+    font-size: 14px;
+}
+}
+
+@media screen and (min-width:700px) {
+  .cls{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+}

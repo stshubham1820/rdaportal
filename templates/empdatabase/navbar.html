@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RDA Dashboard</title>
+
+    <!--Bootsrap css link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha484-Gn5484xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E264XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--Dashboard css link-->
+    <!-- <link rel="stylesheet" href="dash.css"> -->
+
+    <!--font awesome-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    
+<style>
+  body{
+    background-color: #eef0ff;
+  }
+  nav{
+    background-color:#ffffff ;
+    position: fixed;
+  }
+  :root {
+        --nav-bg-color: #13A45A;
+        --icon-bg-color : #003666;
+        --bg-color :#C60F2D ;
+        --body-color : #eef0ff;
+        
+      }
+  .clr{
+    color: var(--icon-bg-color);
+  }
+  .newclr{
+    background-color:var(--bg-color);
+    color: var(--body-color);
+    border-radius: .4rem;
+  }
+  .newclr i{
+    /* background-color: #C60F2D; */
+    color: var(--body-color);
+  }
+  .newclr a.nav-link{
+    /* background-color: #C60F2D; */
+    color: var(--body-color);
+  }
+  
+  .btno{
+        text-align: center;
+        /* color: var(--nav-bg-color);
+        background-color: white; */
+        color: var(--body-color);
+        background-color: var(--bg-color);
+        padding: 10px;
+        border: none;
+        border-radius: .4rem;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.105);
+        cursor: pointer;
+        transition: .3s ease;
+     }
+     textarea {
+        text-align: center;
+        color: var(--nav-bg-color);
+        background-color: white;
+        padding: 10px;
+        border: none;
+        border-radius: .3rem;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.105);
+        transition: .3s ease;
+     }
+     .set a {
+        width: 8rem;
+        text-align: center;
+        color: var(--nav-bg-color);
+        background-color: white;
+        padding: 10px;
+        border: none;
+        border-radius: .3rem;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.105);
+        cursor: pointer;
+        transition: .3s ease;
+     }
+     .btno:hover{
+        color: black;
+     }
+     .profile-content{
+        height:77vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+     }
+
+     .edit-container{
+        display: grid;
+        gap: 1rem;
+        margin-top: 1rem;
+       
+     }
+
+     .edit-container input{
+        padding: 1rem 1.5rem;
+        width: 30%;
+        border-radius: .3rem;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.105);
+        border: none;
+     }
+
+     select{
+        padding: 10px;
+        width: 40%;
+        border-radius: .3rem;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.105);
+        border: none;
+     }
+     .set input{
+        padding: 10px;
+        width: 30%;
+        border-radius: .3rem;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.105);
+        border: none;
+     }
+
+     .edit-container .name{
+        display: flex;
+        gap: 1rem;
+     }
+     .home{
+        margin-top:15%;
+    } 
+    .home h3{
+        text-align: center;
+    }
+    .navdown{
+      padding: 1px;
+      padding-left: 40px;
+      background-color: #003666;
+      color: #ffffff;
+    }
+  .navdown  ul {
+  margin-top: 1%;
+  display: grid;
+  grid-template-columns: 100px 100px 200px; /* or a smarter width setting */
+}
+.Uimaster{
+    width: 70%;
+    margin-left: 15%;
+    height: 500px;
+    overflow-y:auto;
+}
+</style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light p-4" id="nav">
+        <img src="/rdamedia/rdamedia/logo_red_en.png" alt="Logo" style="width:190px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ml-4" id="navbarText">
+          <ul class="navbar-nav mr-auto" style="margin-left: 12.5%;">
+            <li class="nav-item active ">
+              <a class="nav-link p-3 {{newclr}}"{{obj}}  href="/employeedb/"><i class="fa-solid fa-house clr"></i>  Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link p-3 {{newclr1}}"{{obj1}} href="/employeedb/master/"><i class="fa-solid fa-regular fa-user clr"></i>  Master</a>
+            </li>
+            <li class="nav-item active">  
+              <a class="nav-link p-3 {{newclr2}}"{{obj2}} href="/employeedb/allotment/"><i class="fa-solid fa-regular fa-images clr"></i>  Allotment</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link p-3 {{newclr3}}"{{obj3}} href="/employeedb/receipt/"><i class="fa-solid fa-regular fa-building clr"></i>  Receipt</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link p-3 {{newclr4}}"{{obj4}} href="/employeedb/charges/"><i class="fa-solid fa-regular fa-file clr"></i>  Charges</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link p-3 {{newclr5}}"{{obj5}} href="/employeedb/report/"><i class="fa-solid fa-regular fa-newspaper clr"></i>  Report</a>
+            </li>
+            <!-- <li class="nav-item active">
+                <a class="nav-link p-3 {{newclr6}}"{{obj6}} href="/web_dashboard/about/"><i class="fa-solid fa-regular fa-address-book clr"></i>  About</a>
+            </li> -->
+          </ul>
+          <span class="navbar-item">
+            <div class="dropdown mr-4">
+              <button class="btno dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa-solid fa-regular fa-user p-2"></i>Logout
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">Profile Setting</a></li>
+                <li><a class="dropdown-item" href="#">Logout</a></li>
+              </ul>
+            </div>
+          </span>
+        </div>
+      </nav>
+    </ul>
+    <div class="navdown">
+      <ul>
+        <li>Home</li>
+        <li {{css}}>{{page}}</li>
+        <li {{css1}}>{{subpage}}</li>
+    </ul>
+    </div>
+
+</body>
+</html>

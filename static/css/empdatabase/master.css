@@ -1,0 +1,73 @@
+.Uimaster{
+    margin-top: -7%;
+    /* background-color: #ffffff; */
+    /* border-radius: 15px; */
+    /* box-shadow: 2px 2px 20px #b8b7b7; */
+    width: 60%;
+    margin-left: 20%;
+    height: 300px;
+    /* overflow-y:auto; */
+}
+.master_container {
+        height: 150px;
+        width: 180px;
+        display: grid;
+        place-items: center;
+        border-radius: 15px 50px 0px 0px;
+        /* border: 2px solid red; */
+        /* box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.546); */
+	    /* background:linear-gradient(rgb(198, 15, 45), rgb(0, 54, 102)); */
+        background-color: #003666;
+        font-family: sans-serif;
+        cursor: pointer;
+        transition: .3s ease-in;
+      }
+
+      .master_content {
+        margin-top: 10px;
+        display: grid;
+        justify-items: center;
+      }
+
+      .master_icon {
+        font-size: 50px;
+        color: white;
+        transition: .3s ease-in;
+        /* text-shadow: 2px 5px 5px rgba(0, 0, 0, 0.445); */
+      }
+
+      .master_text {
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: white;
+        transition: .3s ease-in;
+        
+      }
+
+      .master_container:hover .master_text{
+        text-shadow: 2px 5px 8px rgba(0, 0, 0, 0.45);
+      }
+
+      .master_container:hover .master_icon{
+        text-shadow: 2px 5px 8px rgba(0, 0, 0, 0.45);
+      }
+
+      .master_container:hover{
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.703);
+      }
+      .bgtext{
+        text-align: center;
+        background-color: #ffffff;
+        /* color: #C60F2D; */
+        color: #003666;
+        width: 180px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        border-radius: 0px 0px 15px 50px;
+      }
+      .bgtext a{
+        text-decoration: none;
+        color: #003666;
+      }
+      

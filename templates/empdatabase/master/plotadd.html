@@ -1,0 +1,110 @@
+{% include "empdatabase/navbar.html" %}
+<link rel="stylesheet" href="/static/css/empdatabase/tabmaster.css">
+<link
+  rel="stylesheet"
+  href="/static/css/empdatabase/plotadd.css"
+/>
+
+
+    <section class="Uimaster">
+        <div class="newcontain">
+            <p class="msg" {{obj13}}>{{message}}</p>
+            <form method="post">
+                {% csrf_token  %}
+            <h1 class="heading">Plot Master</h1>
+            <div class="inputs">
+                <div class="row mb-lg-4">
+                    <div class="col-lg-4">
+                        <label for="applicant_fname">Select Project</label><br>
+                      <select type="checkbox" name="proj" placeholder="Enter the value">
+                        {% for i in pro_data %} 
+                          <option>{{i.Project_Name}}</option>
+                          {% endfor %}
+                          </select>
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="applicant_fname">Select Block / Sector</label><br>
+                        <select type="checkbox" name="block" placeholder="Enter the value">
+                            {% for i in sec_ %} 
+                              <option>{{i.ProjectName.Project_Name}}-{{i.Sector_Name}}</option>
+                              {% endfor %}
+                              </select>
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="applicant_name">Plot Number</label><br>
+                        <input class="int" type="number" name="plotno" placeholder="plt123">
+                    </div>
+                </div>
+                <div class="row mt-lg-2 mb-lg-4">
+                    <div class="col-lg-4">
+                        <label for="applicant_fname">Plot Size</label><br>
+                        <input type="text" name="plotsize" placeholder="143sq">
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="applicant_name">Extra Land</label><br>
+                        <input type="text" name="extra" placeholder="Extra Land">
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="applicant_fname">Plot Type</label><br>
+                        <select type="checkbox" name="type" placeholder="Enter the value">
+                            {% for i in plt_type %} 
+                              <option>{{i.Plottype}}</option>
+                              {% endfor %}
+                              </select>
+                    </div>
+                </div>
+                <div class="row mt-lg-2 mb-lg-4">
+                    <div class="col-lg-4">
+                        <label for="applicant_name">Plot Catergory</label><br>
+                        <select type="checkbox" name="cat" placeholder="Enter the value">
+                            {% for i in cat_ %} 
+                              <option>{{i.Category_Name}}</option>
+                              {% endfor %}
+                              </select>
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="applicant_fname">Plot Area</label><br>
+                        <select type="checkbox" name="area" placeholder="Enter the value">
+                            {% for i in area_ %} 
+                              <option>{{i.Area_Name}}</option>
+                              {% endfor %}
+                              </select>
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="applicant_name">Type</label><br>
+                        <select type="checkbox" name="ttyp" placeholder="Enter the value"> 
+                              <option>Residential</option>
+                              <option>Commerical</option>
+                              </select>
+                    </div>
+                </div>
+                <div class="row mt-lg-2 mb-lg-4">
+                    
+                    <div class="col-lg-4">
+                        <label for="applicant_fname">Category Tag</label><br>
+                        <input type="text" name="tag" placeholder="category tag">
+                    </div>
+                    <div class="col-lg-4">
+                        <label for="applicant_fname">Plot Flag</label><br>
+                        <select type="checkbox" name="flag" placeholder="Enter the value">
+                            {% for i in plt_flag %} 
+                              <option>{{i.Plot_Flag_Name}}</option>
+                              {% endfor %}
+                              </select>
+                    </div>
+                    <div class="col-lg-4">
+                        <button type="submit" class="bbt" style="margin-top: 37.5px;">Add <i class="fa-regular fa-arrow-right"></i> </button>
+                    </div>
+                </div>
+            </form>
+            
+                <button type="submit" class="submit_btn btn mt-4">See Plot Data <i class="fa-regular fa-arrow-right"></i> </button>
+          
+            </div>
+
+    </section>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>
