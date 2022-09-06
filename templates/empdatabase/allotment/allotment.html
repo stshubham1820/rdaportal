@@ -1,0 +1,221 @@
+{% include "empdatabase/navbar.html" %}
+
+<link rel="stylesheet" href="/static/css/empdatabase/form.css">
+<link rel="stylesheet" href="/static/css/empdatabase/tabmaster.css">
+<link rel="stylesheet" href="/static/css/empdatabase/select.css">
+
+    <section class="Uimaster">
+        <div class="newcontain">
+          <p class="msg" {{obj13}}>{{message}}</p>
+            
+            <form method="post">
+              {% csrf_token  %}
+              
+            <div class="inputs">
+                <h1 class="headingss">Account Details</h1>
+                <div class="row mb-lg-4">
+                    <div class="col-lg-6">
+                        <label for="applicant_name">Account Id</label><br>
+                        <input type="text" name="type_name" placeholder="area">
+                    </div>
+                    <div class="col-lg-6" style="margin-top: 12.5px;">
+                        <button type="submit" class="newbtn btn mt-4 next-btn">Next <i class="fa-regular fa-arrow-right"></i> </button>
+                    </div>
+                </div>
+          </div>
+
+
+      <div class="inputs">
+        <h1 class="headingss mb-lg-4">Plot Details</h1>
+                    <div class="row mb-lg-4">
+                        <div class="col-lg-6">
+                            <label for="applicant_name">Select Project</label><br>
+                            <select type="checkbox" name="lock" placeholder="Select the Option">
+                                <option>Select the Option</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="applicant_fname">Select Sector/Block</label><br>
+                            <select type="checkbox" name="lock" placeholder="Select the Option">
+                                <option>Select the Option</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-lg-4">
+                        <div class="col-lg-6">
+                            <label for="applicant_name">Plot No.</label><br>
+                            <select type="checkbox" name="lock" placeholder="Select the Option">
+                                <option>Select the Option</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="applicant_fname">Plot Size</label><br>
+                            <input type="text" name="user_level" placeholder="Level" required>
+                        </div>
+                    </div>
+                    <div class="row  mb-lg-4">
+                        <div class="col-lg-6">
+                            <label for="applicant_name">Plot Category</label><br>
+                            <input type="text" name="name" placeholder="Plot Category">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="applicant_fname">Allotment Type</label><br>
+                            <select type="checkbox" name="lock" placeholder="Select the Option">
+                                <option>Select the Option</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-lg-4">
+                        <div class="col-lg-6">
+                            <label for="applicant_name">Allotment No.</label><br>
+                            <input type="text" name="text" placeholder="Allotment No.">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="applicant_fname">Allotment Date</label><br>
+                            <input type="date" name="date" >
+                        </div>
+                    </div>
+                    <div class="row mb-lg-4">
+                        <div class="col-lg-6" style="margin-top: 12.5px; margin-left: 25%;">
+                            <button type="submit" class="newbtn btn mt-4 next-btn">Next <i class="fa-regular fa-arrow-right"></i> </button>
+                        </div>
+                    </div>
+    
+            
+  </div>
+
+
+  <div class="inputs">
+    <h1 class="headingss mb-lg-4">Account Details</h1>
+    <div class="row mb-lg-4">
+        <div class="col-lg-6">
+            <label for="applicant_name">Allotment Name</label><br>
+            <input type="text" name="text" placeholder="Allotment Name">
+        </div>
+        <div class="col-lg-6">
+            <label for="applicant_fname">Mobile No.</label><br>
+            <input type="text" name="text" placeholder="Mobile No.">
+        </div>
+        
+    </div>
+    <div class="row mb-lg-4">
+        <div class="col-lg-6">
+            <label for="applicant_name">Father/Hasband Name</label><br>
+            <input type="text" name="text" placeholder="Father/Hasband Name">
+        </div>
+        <div class="col-lg-6">
+            <label for="applicant_fname">Address</label><br>
+            <input type="text" name="text" placeholder="Address">
+        </div>
+        
+    </div>
+    <div class="row mb-lg-4">
+        <div class="col-lg-6">
+            <label for="applicant_fname">Date Of Birth</label><br>
+            <input type="date" name="date" >
+        </div>
+        <div class="col-lg-6">
+            <label for="applicant_name">Acc Contact</label><br>
+            <input type="text" name="text" placeholder="Acc Contact">
+        </div>
+        
+    </div>
+    <div class="row mb-lg-4">
+        <div class="col-lg-6">
+            <label for="applicant_name">Email Id</label><br>
+            <input type="email" name="mail" placeholder="your mail id">
+        </div>
+        <div class="col-lg-6">
+            <label for="applicant_fname">Acc Landline</label><br>
+            <input type="text" name="text" placeholder="Acc Landline">
+        </div>
+        
+    </div>
+    <div class="row mb-lg-4">
+        <div class="col-lg-6">
+            <label for="applicant_name">Age</label><br>
+            <input type="text" name="text" placeholder="Age">
+        </div>
+        <div class="col-lg-6">
+            <label for="applicant_fname">Select State*</label><br>
+            <select type="checkbox" name="lock" placeholder="Select the Option">
+                <option>Select the Option</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+        
+    </div>
+    <div class="row mb-lg-4">
+        <div class="col-lg-6">
+            <label for="applicant_name">GST NO.</label><br>
+            <input type="text" name="text" placeholder="GST No.">
+        </div>
+        <div class="col-lg-6">
+            <label for="applicant_fname">Allotment Remarks</label><br>
+            <input type="text" name="text" placeholder="GST No.">
+        </div>
+        
+    </div>
+    <div class="row mb-lg-4">
+        <div class="col-lg-6" style="margin-top: 12.5px;">
+            <button type="submit" class="newbtn btn mt-4">Add <i class="fa-regular fa-arrow-right"></i> </button>
+        </div>
+        <div class="col-lg-6" style="margin-top: 12.5px;">
+            <a href="/" class="newbtn btn mt-4">Reset <i class="fa-regular fa-arrow-right"></i> </a>
+        </div>
+    </div>
+</div>
+        </form>
+          
+          
+          <div class="cls" style="margin-bottom: 5%; min-height: 50vh; display: grid; place-items: center;">
+              
+          </div>
+        </div>
+
+    </section>
+    <script>
+        let nextBtns = document.querySelectorAll(".next-btn");
+        
+        
+        
+        
+        for (const nextBTn of nextBtns) {
+            nextBTn.addEventListener("click",()=>{
+                
+                let nextSlide = document.querySelector(".next-slide");
+            
+            
+                let nextSibling = nextSlide.nextElementSibling;
+              
+                let previousSibling = nextSibling.previousElementSibling;
+
+                nextSibling.classList.add("next-slide");
+                previousSibling.classList.remove("next-slide");
+                
+                
+        
+               
+
+            });
+        };
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</body>
+</html>

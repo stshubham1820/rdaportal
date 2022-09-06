@@ -42,6 +42,22 @@
   letter-spacing: 0.02em;
   color: var(--headingHover_color);
 }
+div .headingss {
+  width: 935px;
+  height: 30px;
+  margin-left: -90px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 25px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0.02em;
+  color: var(--headingHover_color);
+}
 .inputs {
   width: 771px;
   /* text-align: center; */
@@ -183,7 +199,9 @@
     overflow-x: hidden;
     margin: 0 1rem;
   }
-
+  .input-container .row{
+    margin-left: 10%;
+  }
 .input-container select {
   width: 366px;
   height: 47px;
@@ -216,6 +234,8 @@
   }
   
 .btn-container button{
+    margin-top: 10px;
+    margin-bottom: 20px;
     padding: .3rem 1rem;
     border: none;
     cursor: pointer;
