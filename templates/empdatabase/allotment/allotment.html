@@ -8,10 +8,10 @@
         <div class="newcontain">
           <p class="msg" {{obj13}}>{{message}}</p>
             
-            <form method="post">
+            <form class="inputs-container" method="post">
               {% csrf_token  %}
               
-            <div class="inputs">
+                <div class="inputs account-id next-slide">
                 <h1 class="headingss">Account Details</h1>
                 <div class="row mb-lg-4">
                     <div class="col-lg-6">
@@ -22,10 +22,10 @@
                         <button type="submit" class="newbtn btn mt-4 next-btn">Next <i class="fa-regular fa-arrow-right"></i> </button>
                     </div>
                 </div>
-          </div>
+                </div>
 
 
-      <div class="inputs">
+                <div class="inputs plot-details">
         <h1 class="headingss mb-lg-4">Plot Details</h1>
                     <div class="row mb-lg-4">
                         <div class="col-lg-6">
@@ -94,92 +94,92 @@
                     </div>
     
             
-  </div>
+                 </div>
 
 
-  <div class="inputs">
-    <h1 class="headingss mb-lg-4">Account Details</h1>
-    <div class="row mb-lg-4">
-        <div class="col-lg-6">
-            <label for="applicant_name">Allotment Name</label><br>
-            <input type="text" name="text" placeholder="Allotment Name">
-        </div>
-        <div class="col-lg-6">
-            <label for="applicant_fname">Mobile No.</label><br>
-            <input type="text" name="text" placeholder="Mobile No.">
-        </div>
-        
-    </div>
-    <div class="row mb-lg-4">
-        <div class="col-lg-6">
-            <label for="applicant_name">Father/Hasband Name</label><br>
-            <input type="text" name="text" placeholder="Father/Hasband Name">
-        </div>
-        <div class="col-lg-6">
-            <label for="applicant_fname">Address</label><br>
-            <input type="text" name="text" placeholder="Address">
-        </div>
-        
-    </div>
-    <div class="row mb-lg-4">
-        <div class="col-lg-6">
-            <label for="applicant_fname">Date Of Birth</label><br>
-            <input type="date" name="date" >
-        </div>
-        <div class="col-lg-6">
-            <label for="applicant_name">Acc Contact</label><br>
-            <input type="text" name="text" placeholder="Acc Contact">
-        </div>
-        
-    </div>
-    <div class="row mb-lg-4">
-        <div class="col-lg-6">
-            <label for="applicant_name">Email Id</label><br>
-            <input type="email" name="mail" placeholder="your mail id">
-        </div>
-        <div class="col-lg-6">
-            <label for="applicant_fname">Acc Landline</label><br>
-            <input type="text" name="text" placeholder="Acc Landline">
-        </div>
-        
-    </div>
-    <div class="row mb-lg-4">
-        <div class="col-lg-6">
-            <label for="applicant_name">Age</label><br>
-            <input type="text" name="text" placeholder="Age">
-        </div>
-        <div class="col-lg-6">
-            <label for="applicant_fname">Select State*</label><br>
-            <select type="checkbox" name="lock" placeholder="Select the Option">
-                <option>Select the Option</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-            </select>
-        </div>
-        
-    </div>
-    <div class="row mb-lg-4">
-        <div class="col-lg-6">
-            <label for="applicant_name">GST NO.</label><br>
-            <input type="text" name="text" placeholder="GST No.">
-        </div>
-        <div class="col-lg-6">
-            <label for="applicant_fname">Allotment Remarks</label><br>
-            <input type="text" name="text" placeholder="GST No.">
-        </div>
-        
-    </div>
-    <div class="row mb-lg-4">
-        <div class="col-lg-6" style="margin-top: 12.5px;">
-            <button type="submit" class="newbtn btn mt-4">Add <i class="fa-regular fa-arrow-right"></i> </button>
-        </div>
-        <div class="col-lg-6" style="margin-top: 12.5px;">
-            <a href="/" class="newbtn btn mt-4">Reset <i class="fa-regular fa-arrow-right"></i> </a>
-        </div>
-    </div>
-</div>
-        </form>
+                <div class="inputs account-details">
+                    <h1 class="headingss mb-lg-4">Account Details</h1>
+                    <div class="row mb-lg-4">
+                        <div class="col-lg-6">
+                            <label for="applicant_name">Allotment Name</label><br>
+                            <input type="text" name="text" placeholder="Allotment Name">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="applicant_fname">Mobile No.</label><br>
+                            <input type="text" name="text" placeholder="Mobile No.">
+                        </div>
+                        
+                    </div>
+                    <div class="row mb-lg-4">
+                        <div class="col-lg-6">
+                            <label for="applicant_name">Father/Hasband Name</label><br>
+                            <input type="text" name="text" placeholder="Father/Hasband Name">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="applicant_fname">Address</label><br>
+                            <input type="text" name="text" placeholder="Address">
+                        </div>
+                        
+                    </div>
+                    <div class="row mb-lg-4">
+                        <div class="col-lg-6">
+                            <label for="applicant_fname">Date Of Birth</label><br>
+                            <input type="date" name="date" >
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="applicant_name">Acc Contact</label><br>
+                            <input type="text" name="text" placeholder="Acc Contact">
+                        </div>
+                        
+                    </div>
+                    <div class="row mb-lg-4">
+                        <div class="col-lg-6">
+                            <label for="applicant_name">Email Id</label><br>
+                            <input type="email" name="mail" placeholder="your mail id">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="applicant_fname">Acc Landline</label><br>
+                            <input type="text" name="text" placeholder="Acc Landline">
+                        </div>
+                        
+                    </div>
+                    <div class="row mb-lg-4">
+                        <div class="col-lg-6">
+                            <label for="applicant_name">Age</label><br>
+                            <input type="text" name="text" placeholder="Age">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="applicant_fname">Select State*</label><br>
+                            <select type="checkbox" name="lock" placeholder="Select the Option">
+                                <option>Select the Option</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                    <div class="row mb-lg-4">
+                        <div class="col-lg-6">
+                            <label for="applicant_name">GST NO.</label><br>
+                            <input type="text" name="text" placeholder="GST No.">
+                        </div>
+                        <div class="col-lg-6">
+                            <label for="applicant_fname">Allotment Remarks</label><br>
+                            <input type="text" name="text" placeholder="GST No.">
+                        </div>
+                        
+                    </div>
+                    <div class="row mb-lg-4">
+                        <div class="col-lg-6" style="margin-top: 12.5px;">
+                            <button type="submit" class="newbtn btn mt-4">Add <i class="fa-regular fa-arrow-right"></i> </button>
+                        </div>
+                        <div class="col-lg-6" style="margin-top: 12.5px;">
+                            <a href="/" class="newbtn btn mt-4">Reset <i class="fa-regular fa-arrow-right"></i> </a>
+                        </div>
+                    </div>
+                </div>
+             </form>
           
           
           <div class="cls" style="margin-bottom: 5%; min-height: 50vh; display: grid; place-items: center;">

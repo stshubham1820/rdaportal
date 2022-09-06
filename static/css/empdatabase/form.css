@@ -131,13 +131,17 @@ div .headingss {
 
 /* for plot allotment  */
 
+.inputs-container{
+  position: relative;
+}
+
 /* 1. id details  */
 
 .account-id {
   position: absolute;
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,17 +151,6 @@ div .headingss {
   transition: .3s ease;
 }
 
-
-.acc-container > input {
-  outline: none;
-  border: none;
-  width: 400px;
-  height: 40px;
-  padding: 0.6rem 0.8rem;
-  margin-top: 1rem;
-  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.053);
-  border-radius: 0.2rem;
-}
 
 .next-btn {
   border: none;
@@ -181,9 +174,9 @@ div .headingss {
 
 .plot-details {
   position: absolute;
-  top: 50%;
+  /* top: 50%;
   left: 50%;
-  transform: translate(-50%, -36%);
+  transform: translate(-50%, -36%); */
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -192,32 +185,15 @@ div .headingss {
   transition: .3s ease;
 }
 
-.input-container{
-    height: 388px;
-    width: 80vw;
-    overflow-y: auto;
-    overflow-x: hidden;
-    margin: 0 1rem;
-  }
-  .input-container .row{
-    margin-left: 10%;
-  }
-.input-container select {
-  width: 366px;
-  height: 47px;
-  padding-left: 15px;
-  border-radius: 4px;
-  border: 0.5px solid black;
-  margin-top: 10px;
-}
+
 
 /* 3. account details */
 
 .account-details {
     position: absolute;
-    top: 50%;
+    /* top: 50%;
     left: 50%;
-    transform: translate(-50%, -36%);
+    transform: translate(-50%, -36%); */
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -225,28 +201,6 @@ div .headingss {
     pointer-events: none;
     transition: .3s ease;
   }
-
-  .btn-container{
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 2rem;
-  }
-  
-.btn-container button{
-    margin-top: 10px;
-    margin-bottom: 20px;
-    padding: .3rem 1rem;
-    border: none;
-    cursor: pointer;
-    background-color: var(--headingHover_color);
-    color: white;
-    border-radius: .3rem;
-}
-
-.reset-btn{
-    background-color: var(--attention_color) !important;
-}
 
 /* for next slide by js */
 .next-slide{
