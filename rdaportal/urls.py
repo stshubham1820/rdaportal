@@ -20,5 +20,6 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('employeedb/',include('empdatabase.urls')),
+    path('employeedb/',include('empdb.urls')),
+    path('employeedb/master/',include('empdatabase.urls')),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)

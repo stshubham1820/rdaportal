@@ -11,23 +11,12 @@ def check(data):
         return data
 
 
-def home(request):
-    return render(request,"empdatabase/dashboard.html",{"obj":"Style = color:#FFF5F9;",'newclr':'newclr',"css":"Style = display:none;","css1":"Style = display:none;"})
 
 
 def master(request):
     return render(request,"empdatabase/master.html",{"obj1":"Style = color:#FFF5F9;",'newclr1':'newclr',"page":"Master","css1":"Style = display:none;"})
 
 
-def receipt(request):
-    return render(request,"empdatabase/receipt.html",{"obj3":"Style = color:#FFF5F9;",'newclr3':'newclr',"page":"Receipt","css1":"Style = display:none;"})
-
-
-def charges(request):
-    return render(request,"empdatabase/charges.html",{"obj4":"Style = color:#FFF5F9;",'newclr4':'newclr',"page":"Charges","css1":"Style = display:none;"})
-
-def report(request):
-    return render(request,"empdatabase/report.html",{"obj5":"Style = color:#FFF5F9;",'newclr5':'newclr',"page":"Report","css1":"Style = display:none;"})
 
 ###Master####
 
