@@ -117,28 +117,6 @@ USE_TZ = True
 
 CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1/","http://3.111.38.219/","http://portal.test-rda.org/"]
 
-# Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/4.0/howto/static-files/
-
-# AWS_ACCESS_KEY_ID = 'AKIATL2TFFGLUIVF2QMB' 
-
-# AWS_SECRET_ACCESS_KEY = '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'
-# AWS_STORAGE_BUCKET_NAME = 'rdawebstatic1'
-
-# AWS_S3_CUSTOM_DOMAIN='%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-
-# AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
-
-# #AWS_DEFAULT_ACL = 'public-read'
-
-
-# AWS_LOCATION= 'static'
-
-# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
-
-# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
-
-# STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
