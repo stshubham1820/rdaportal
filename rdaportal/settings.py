@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-$f7hti=(te%71#4^(5fx^g05f@d3$u5t4d^_bkzi-t3%yck*w3
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["127.0.0.1","3.111.38.219","portal.test-rda.org"]
 
 
 # Application definition
@@ -39,11 +39,13 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'empdatabase',
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -113,13 +115,40 @@ USE_I18N = True
 
 USE_TZ = True
 
+CSRF_TRUSTED_ORIGINS = ["http://127.0.0.1/","http://3.111.38.219/","http://portal.test-rda.org/"]
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
-STATIC_URL = 'static/'
-STATICFILES_DIRS = [BASE_DIR,"static"]
+# AWS_ACCESS_KEY_ID = 'AKIATL2TFFGLUIVF2QMB' 
 
+# AWS_SECRET_ACCESS_KEY = '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'
+# AWS_STORAGE_BUCKET_NAME = 'rdawebstatic1'
+
+# AWS_S3_CUSTOM_DOMAIN='%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
+
+# AWS_S3_OBJECT_PARAMETERS = {'CacheControl': 'max-age=86400'}
+
+# #AWS_DEFAULT_ACL = 'public-read'
+
+
+# AWS_LOCATION= 'static'
+
+# STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+# STATICFILES_STORAGE = 'storages.backends.s3boto3.S3StaticStorage'
+
+# STATIC_URL = 'https://%s/%s/' % (AWS_S3_CUSTOM_DOMAIN, AWS_LOCATION)
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
+
+
+CORS_ALLOWED_ORIGINS = [
+    "https://example.com",
+    "https://sub.example.com",
+    "http://localhost:8000",
+    "http://127.0.0.1:8000",
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 

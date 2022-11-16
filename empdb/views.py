@@ -43,3 +43,14 @@ def receiptlist(request):
 
 def receiptcancel(request):
     return render(request,"empdatabase/receipt/listcan.html",{"obj3":"Style = color:#FFF5F9;",'newclr3':'newclr',"page":"Allotment","subpage":"Allotment List","obj13":"Style = display:none;"})
+
+
+def editpassw(request):
+    return render(request,"empdatabase/editpassw.html",{"obj":"Style = color:#FFF5F9;",'newclr':'newclr',"css":"Style = display:none;","subpage":"Edit Password","obj13":"Style = display:none;"})
+
+
+def editprofile(request):
+    return render(request,"empdatabase/profile.html",{"obj":"Style = color:#FFF5F9;",'newclr':'newclr',"css":"Style = display:none;","subpage":"Edit Profile","obj13":"Style = display:none;"})
+
+def sendreport(request):
+    return render(request,"empdatabase/sendreport.html",{"obj":"Style = color:#FFF5F9;",'newclr':'newclr',"css":"Style = display:none;","subpage":"Send Report","obj13":"Style = display:none;"})

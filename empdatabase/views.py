@@ -12,7 +12,6 @@ def check(data):
 
 
 
-
 def master(request):
     return render(request,"empdatabase/master.html",{"obj1":"Style = color:#FFF5F9;",'newclr1':'newclr',"page":"Master","css1":"Style = display:none;"})
 

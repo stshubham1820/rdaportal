@@ -5,6 +5,9 @@ from .views import *
 urlpatterns = [
     #path('allotment/',include('empdb.urls')),
     path('',home,name="home"),
+    path('editpassword/',editpassw,name="editpassw"),
+    path('editprofile/',editprofile,name="editprofile"),
+    path('sendreport/',sendreport,name="sendreport"),
     path('allotment/',allotment,name="allotment"),
     path('allotment/plotallotment/',plotallotment,name='plotallotment'),
     path('allotment/allotmentlist/',plotlist,name='plotlist'),
